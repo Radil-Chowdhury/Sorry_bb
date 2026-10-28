@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0f2c" />
+  <title>I'm Sorry…</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="stars"></div>
+  <div id="floaters"></div>
+
+  <main id="app">
+
+    <!-- 1. Intro -->
+    <section class="scene" data-scene="intro">
+      <div class="bear-slot" data-bear="alone"></div>
+      <p class="reveal big">It's late night… I've been walking for hours…</p>
+      <p class="reveal">I'm holding something heavy… not in hands, but in heart…</p>
+      <button class="btn reveal next">Let me talk…</button>
+    </section>
+
+    <!-- 2. Apology -->
+    <section class="scene" data-scene="hurt">
+      <div class="bear-slot" data-bear="hurt"></div>
+      <p class="reveal big">I know I hurt you…</p>
+      <p class="reveal">I was wrong, and I'm so sorry…</p>
+      <button class="btn reveal next">Read my letter…</button>
+    </section>
+
+    <!-- 3. Polaroids -->
+    <section class="scene scroll" data-scene="photos" id="photoScene">
+      <p class="reveal big">I've been staring at these all night… 🌙</p>
+      <div id="polaroids"></div>
+      <button class="btn reveal next" id="photoNext">Continue…</button>
+    </section>
+
+    <!-- 4. Letter -->
+    <section class="scene scroll" data-scene="letter">
+      <div class="card reveal">
+        <h2>My Sorry Letter to You…</h2>
+        <p id="letterText"></p>
+        <p class="ask">Can you please forgive me…? 💔</p>
+      </div>
+      <button class="btn reveal next">I need you…</button>
+    </section>
+
+    <!-- 5. Hug -->
+    <section class="scene" data-scene="hug">
+      <div class="bear-slot hug" data-bear="hug" id="hugBears"></div>
+      <p class="reveal big">I don't need anything fancy right now…</p>
+      <p class="reveal">Just your arms around me, that's all I want. 💜</p>
+      <button class="btn reveal" id="hugBtn">♡ Send a hug</button>
+      <button class="btn reveal next hidden" id="hugNext">One more thing…</button>
+    </section>
+
+    <!-- 6. Gift -->
+    <section class="scene" data-scene="gift">
+      <p class="reveal big">I have something special for you… 💝</p>
+      <div class="gift reveal" id="gift" role="button" tabindex="0" aria-label="Open the gift">🎁</div>
+      <p class="reveal hint">Click to open! ✨</p>
+    </section>
+
+    <!-- 7. Finale -->
+    <section class="scene scroll" data-scene="finale">
+      <p class="reveal big">I have something special for you… 💝</p>
+      <div class="bear-slot" data-bear="flower"></div>
+      <p class="reveal big">This flower will never wilt… 🌹</p>
+      <p class="reveal" id="promise"></p>
+      <p class="reveal big end">You mean everything to me 💕✨</p>
+      <button class="btn reveal" id="replay">↺ Read again</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

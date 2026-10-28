@@ -6,7 +6,7 @@ const CONFIG = {
   // If a file is missing, a sunset placeholder is shown instead.
   // pos (optional): which part of the photo stays visible in the square frame, e.g. "50% 30%".
   photos: [
-    { src: "photos/photo1.jpg", caption: "us 💛", tape: "#ffd84d", pos: "50% 30%" },
+    { src: "photo1.jpg", caption: "us 💛", tape: "#ffd84d", pos: "50% 30%" },
     { src: "photos/photo2.jpg", caption: "that day…", tape: "#6fe3a8" },
     { src: "photos/photo3.jpg", caption: "I miss this", tape: "#7fb4ff" },
   ],
